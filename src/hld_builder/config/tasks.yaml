@@ -59,7 +59,7 @@ hld_content_generation_task:
         
     - Directly aligned with the microlesson's learning objective.
     - Drawn from current industry practices, tools, and knowledge.
-    - Selected to build progressively toward the overall module goal.
+    - Selected to build progressively toward the overall course goal.
     - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory".
     - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
     - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks.
@@ -76,19 +76,21 @@ hld_content_generation_task:
 
 
   expected_output: >
-    A comprehensive module outline in JSON format, structured according to 
+    A comprehensive HLD in JSON format, structured according to 
     the following:
 
-    - `title`: A string. The title of the module (identical to the provided module title).
-    - `about`: A string. A brief summary of the module's purpose and structure (generated based on the provided module topic).
-    - `tools`: List of the software that will be used in the module. This should be a list of strings and should be identical to the tools in the input.
+    - `title`: A string. The title of the product (identical to the provided product title).
+    - `about`: A string. A brief summary of the course's purpose and structure (generated based on the provided inputs).
+    - `tools`: List of the software that will be used in the course. This should be a list of strings and should be identical to the tools in the input.
     - `learner_persona`: A string. The description of the target audience (identical to the provided learner persona).
-    - `prerequisites`: A list of the required skills or knowledge (based on module topic and learner persona).
-    - `microlessons` list (containing the following for each microlesson):
-      - `title`: A string. The title of the microlesson.
-      - `id`: A string. Include an id for the microlesson, starting at 1 and incrementing by 1 for each microlesson.
-      - `minutes`: A string. Include the estimated time it will take to complete the microlesson in minutes.
-      - `learning_objective`: A string.The exact learning objective for the microlesson as provided in the learning objectives.
+    - `prerequisites`: A list of the required skills or knowledge (based on course topic and learner persona).
+    - `learning_outcomes`: The high-level learning outcomes (identical to the provided learning outcomes).
+    - `business_goals`: The business goals (identical to the provided business goals).
+    - `module` list (containing the following for each module):
+      - `title`: A string. The title of the module.
+      - `id`: A string. Include an id for the module, starting at 1 and incrementing by 1 for each module.
+      - `minutes`: A string. Include the estimated time it will take to complete the module in minutes.
+      - `learning_objective`: A string.The exact learning objectives for the module as provided in the learning objectives.
       - `outline`: A list of strings.A brief outline of the key concepts that will be covered in the microlesson.
   agent: led_agent
 
