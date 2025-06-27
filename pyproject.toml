@@ -1,0 +1,23 @@
+[project]
+name = "hld_builder"
+version = "0.1.0"
+description = "hld_builder using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.108.0,<1.0.0"
+]
+
+[project.scripts]
+hld_builder = "hld_builder.main:run"
+run_crew = "hld_builder.main:run"
+train = "hld_builder.main:train"
+replay = "hld_builder.main:replay"
+test = "hld_builder.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
