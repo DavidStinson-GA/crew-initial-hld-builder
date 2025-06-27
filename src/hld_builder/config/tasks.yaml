@@ -74,13 +74,6 @@ hld_content_generation_task:
     - Ensure accessibility for remote learners.
     - Never include any multiple choice questions or knowledge checks.
 
-    ## Context
-
-    Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
-
-    <ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs.">
-    {doc_ga_learning_philosophy}
-    </ga_learning_philosophy>
 
   expected_output: >
     A comprehensive module outline in JSON format, structured according to 

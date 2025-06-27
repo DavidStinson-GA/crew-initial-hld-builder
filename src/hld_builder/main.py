@@ -18,7 +18,25 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        'product_title': 'Modern Engineering Fundamentals',
+        'client_name': '',
+        'client_priorities': [
+            'Retrain and upskill existing employees',
+            'Move to the cloud',
+            'Containerize new apps'
+        ],
+        'learner_persona': 'Junior developer, tech lead, or experienced coder',
+        'learning_outcomes': [
+            'Upskill existing coders to learn JavaScript',
+            'Upskill existing coders to learn Node',
+            'Upskill existing coders to learn Express'
+            ],
+        'business_goals': [
+            'Reskill existing employees'
+        ],
+        'course_delivery_method': 'remote',
+        'course_modality': 'online',
+        'course_duration_h': '40',
         'current_year': str(datetime.now().year)
     }
     
