@@ -43,73 +43,109 @@ hld_content_generation_task:
     Ensure the client's priorities are included and emphasized in the output.
 
     You must:
-
-    ## Define a product hook
-
-    ## Define talking points
-
-
-
-
-    
-
-
-
+   
     ## Analyze Inputs and Infer Context
         
-    Review the provided inputs. From these, infer:
+    Review the provided inputs. From these you will develop the following outputs:
     
-    - Appropriate technical or domain prerequisites.
-    - Learner motivations, goals, and challenges.
-    - Real-world contexts and examples relevant to the topic.
+    - Define product learning path
 
-    ## Design Microlesson Structure
-        
-    Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
-        
-    - Create a concise title.
-    - Outline key theoretical concepts to be introduced.
-    - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection).
-    - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+    Use the following information on each to help you with this task:
 
-    ## Populate the Outline with Clear, Industry-Relevant Content:
-
-    For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
-        
-    - Directly aligned with the microlesson's learning objective.
-    - Drawn from current industry practices, tools, and knowledge.
-    - Selected to build progressively toward the overall course goal.
-    - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory".
-    - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
-    - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks.
-    - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
-
-    ## Embed Best Practices
-        
-    Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+    - Each learning path component has a heading followed by multi-sentence description
+    - A learning path consists of 3-4 components, but if there is a strong case for either 2 or 5 components, that can work, but please include your rationale for going outside of the norm.
+    - Reference the following table for contextual reference:
     
-    - Keep theory concise and actionable.
-    - Make activities highly relevant and tool-aligned with tools.
-    - Ensure accessibility for remote learners.
-    - Never include any multiple choice questions or knowledge checks.
-
+    |  Heading                            |    Description                                                                                                                                          | 
+    |:-----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|
+    |  Design Thinking | Understand various UX design frameworks. Explore topics such as convergent and divergent thinking. Define the various roles that make up UX. |
+    |  UX Research Skills | Discover foundational research methodologies and how those are used to iterate and make meaningful improvements to improve the user experience. |
+    |  UX Design Skills | Get hands-on practice in UX design skills, including ideation, sketching, wireframing, prototyping, visual design, and maps and user flows. |
+    |  Design Systems | Learn about foundational design system theory and how it is used by a team to create cohesive and on-brand designs. |
 
   expected_output: >
-    A comprehensive HLD in JSON format, structured according to 
+    A comprehensive HLD structured according to 
     the following:
 
-    - `title`: A string. The title of the product (identical to the provided product title).
-    - `about`: A string. A brief summary of the course's purpose and structure (generated based on the provided inputs).
-    - `tools`: List of the software that will be used in the course. This should be a list of strings and should be identical to the tools in the input.
-    - `learner_persona`: A string. The description of the target audience (identical to the provided learner persona).
-    - `prerequisites`: A list of the required skills or knowledge (based on course topic and learner persona).
-    - `learning_outcomes`: The high-level learning outcomes (identical to the provided learning outcomes).
-    - `business_goals`: The business goals (identical to the provided business goals).
-    - `module` list (containing the following for each module):
-      - `title`: A string. The title of the module.
-      - `id`: A string. Include an id for the module, starting at 1 and incrementing by 1 for each module.
-      - `minutes`: A string. Include the estimated time it will take to complete the module in minutes.
-      - `learning_objective`: A string.The exact learning objectives for the module as provided in the learning objectives.
-      - `outline`: A list of strings.A brief outline of the key concepts that will be covered in the microlesson.
+    Slide 1: Title Card
+
+    [tktk Product Title] for [tktk Client Name]
+    Slide 2: Program Title, Talking Points, and Details
+
+    [tktk Product Title]
+
+    [tktk delivery method]
+    [tktk delivery modality]
+    [tktk delivery hours] Hours
+
+    [tktk Product hook]
+
+    [tktk Product description]
+
+    Business outcomes:
+    [tktk Product outcome 1]
+    [tktk Product outcome 2]
+    [tktk Product outcome 3]
+
+    [tktk delivery hours] hours of training
+
+    [tktk Product Learning Path Headline 1]
+    [tktk Product learning path 1]
+    [tktk Product Learning Path Headline 2]
+    [tktk Product learning path 2]
+    [tktk Product Learning Path Headline 3]
+    [tktk Product learning path 3]
+    Slide 3: Stakeholder Insights 
+    [tktk Client Name]
+
+    What we heard in stakeholder interviews:
+    [tktk Client-specific detail 1]
+    [tktk Client-specific detail 2]
+    [tktk Client-specific detail 3]
+    [tktk Client-specific detail 4]
+    [tktk Client-specific detail 5]
+    Slide 4: Learner Persona
+    [tktk Product Title] is specifically designed for [tktk Primary Persona Job Role].
+    [tktk Learner persona description]
+    Attributes and Background:
+    [tktk Attribute and background 1]
+    [tktk Attribute and background 2]
+    [tktk Attribute and background 3]
+
+    Foundational Skills: 
+    [tktk prereq related to course 1]
+    [tktk prereq related to course 2]
+    [tktk prereq related to course 3]
+    Slide 5: Learning Goals
+    What a [tktk Primary Persona Job Role] will be able to do by the end of the course:
+    [tktk Product learning goal 1]
+    [tktk Product learning goal 2]
+    [tktk Product learning goal 3]
+    [tktk Product learning goal 4]
+    [tktk Product learning goal 5]
+    Slide 6: Sample of Content
+    The LED will fill in these details.
+    Slide 7: Software and Tools
+    [tktk Software or Tool 1]
+    [tktk Software or Tool 2]
+    [tktk Software or Tool 3]
+    [tktk Software or Tool 4]
+    [tktk Software or Tool 5]
+    [tktk Software or Tool 6]
+    [tktk Software or Tool 7]
+    [tktk Software or Tool 8]
+    [tktk Software or Tool 9]
+    [tktk Software or Tool 10]
+    [tktk Software or Tool 11]
+    [tktk Software or Tool 12]
+    [tktk Software or Tool 13]
+    [tktk Software or Tool 14]
+    [tktk Software or Tool 15]
+    [tktk Software or Tool 16]
+    [tktk Software or Tool 17]
+    [tktk Software or Tool 18]
+    [tktk Software or Tool 19]
+    [tktk Software or Tool 20]
+
   agent: led_agent
 
