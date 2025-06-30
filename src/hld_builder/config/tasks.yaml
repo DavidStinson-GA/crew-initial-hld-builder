@@ -44,9 +44,16 @@ hld_content_generation_task:
 
     You must:
 
-    ## Define Product Title 
+    ## Define a product hook
+
+    ## Define talking points
+
+
+
+
     
-    Use the provided title: {product_title}.
+
+
 
     ## Analyze Inputs and Infer Context
         
@@ -66,7 +73,7 @@ hld_content_generation_task:
     - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
 
     ## Populate the Outline with Clear, Industry-Relevant Content:
-        
+
     For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
         
     - Directly aligned with the microlesson's learning objective.
