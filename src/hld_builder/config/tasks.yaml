@@ -8,23 +8,35 @@ hld_content_generation_task:
 
     Your process should involve the following steps, informed by the following inputs:
     
+    <inputs>
     The product title: {product_title}
 
     The client name is: {client_name}
 
-    The client's priorities: {client_priorities}
-
-    The learner persona is: {learner_persona}
-
-    The high-level learning outcomes: {learning_outcomes}
-
-    The business goals are: {business_goals}
-
     The course delivery method: {course_delivery_method}
 
-    The course modality: {course_modality}
+    The course delivery modality: {course_delivery_modality}
 
     The course duration in hours: {course_duration_h}
+
+    The course description: {course_description}
+
+    The course's business outcomes: {course_business_outcomes}
+
+    The client's priorities: {client_priorities}
+
+    The primary learner persona job role: {primary_persona_job_role}
+
+    The learner persona description: {learner_persona_description}
+
+    The learner persona attributes and background: {learner_persona_attributes_and_background}
+
+    The learner persona's existing foundational knowledge related to the course topic: {learner_persona_existing_knowledge}
+
+    The high-level learning outcomes of the course: {course_learning_outcomes}
+
+    The software and tools that will be used in the course: {course_software_and_tools}
+    </inputs>
 
     If no client name is provided, assume there's no client.
 
