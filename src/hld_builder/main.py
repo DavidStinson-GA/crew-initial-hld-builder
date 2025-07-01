@@ -41,13 +41,13 @@ def run():
         'primary_persona_job_role': 'Software Engineer',
         'learner_persona_description': 'A software engineer with 3+ years of experience in software development, specializing in building web applications using modern JavaScript frameworks and libraries.',
         'learner_persona_attributes_and_background': [
-            'Strong foundation in JavaScript, React, and Node.js',
-            'Experience building web applications',
-            'Familiar with modern web development practices and tools',
-            'Strong interest in learning new technologies and approaches'
+            'Strong foundation in JavaScript, React, and Node.js.',
+            'Experience building web applications.',
+            'Familiar with modern web development practices and tools.',
+            'Strong interest in learning new technologies and approaches.'
         ],
         'learner_persona_existing_knowledge': [
-            'Familiar with implementing UI designs using HTML and CSS',
+            'Familiar with implementing UI designs using HTML and CSS.',
         ],
         'course_learning_outcomes': [
             'Create polished, professional, and complete designs; and articulate design decisions made to peers and other UX professionals.',

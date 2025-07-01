@@ -31,7 +31,7 @@ hld_content_generation_task:
 
     The learner persona attributes and background: {learner_persona_attributes_and_background}
 
-    The learner persona's existing foundational knowledge related to the course topic: {learner_persona_existing_knowledge}
+    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
 
     The high-level learning outcomes of the course: {course_learning_outcomes}
 
@@ -45,32 +45,48 @@ hld_content_generation_task:
     You must:
    
     ## Analyze Inputs and Infer Context
-        
-    Review the provided inputs. From these you will develop the following outputs:
-    
-    - Define product learning path
 
-    Use the following information on each to help you with this task:
+    Use the following information on each to help you define a product learning path:
 
-    - Each learning path component has a heading followed by multi-sentence description
-    - A learning path consists of 3-4 components, but if there is a strong case for either 2 or 5 components, that can work, but please include your rationale for going outside of the norm.
-    - Reference the following table for contextual reference:
+    - Each learning path component has a heading followed by multi-sentence description.
+    - The learning path should be a broad overview of the course that is aligned with:
+
+      - The course's learning outcomes.
+      - The course's business outcomes.
+      - The course's software and tools.
+      - The course's primary learner persona.
+      - The course's learner persona attributes and background.
+      - The course's learner persona's existing foundational knowledge related to the course topic.
+      - The course's primary learner persona job role.
+      - The course's duration in hours.
+
+    - A learning path typically consists of 3 or 4 components. If there is a strong case for either 2 or 5 components, that can work, but please include your rationale for going outside of the norm in the designated area of the output.
+    - Use the following table for contextual reference for some examples of learning path components. Note that these are just examples, your output will vary based on the inputs provided:
     
     |  Heading                            |    Description                                                                                                                                          | 
     |:-----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|
-    |  Design Thinking | Understand various UX design frameworks. Explore topics such as convergent and divergent thinking. Define the various roles that make up UX. |
-    |  UX Research Skills | Discover foundational research methodologies and how those are used to iterate and make meaningful improvements to improve the user experience. |
-    |  UX Design Skills | Get hands-on practice in UX design skills, including ideation, sketching, wireframing, prototyping, visual design, and maps and user flows. |
-    |  Design Systems | Learn about foundational design system theory and how it is used by a team to create cohesive and on-brand designs. |
+    | Design Thinking | Understand various UX design frameworks. Explore topics such as convergent and divergent thinking. Define the various roles that make up UX. |
+    | UX Research Skills | Discover foundational research methodologies and how those are used to iterate and make meaningful improvements to improve the user experience. |
+    | UX Design Skills | Get hands-on practice in UX design skills, including ideation, sketching, wireframing, prototyping, visual design, and maps and user flows. |
+    | Design Systems | Learn about foundational design system theory and how it is used by a team to create cohesive and on-brand designs. |
+    | IT Basics and A+ Core 1 - Hardware | Explore hardware components, networking basics, and computing fundamentals. |
+    | A+ Core 2 - Software | Operating systems, software troubleshooting, security, and scripting. |
+    | Network+ | Network design and management, protocols, wireless networks, network and data security. |
 
   expected_output: >
-    A comprehensive HLD structured according to 
-    the following:
+    A comprehensive HLD written in plain text. The HLD should be structured according to the structure defined in the <hld_structure> tag below. Please retain the spacing and formatting of the output as it is provided. When you encounter a segment of text in square brackets, replace that placeholder text with the appropriate value without providing any additional descriptors.
+    
+    Do not change any of the final values in the output unless it is to fix the final output to be grammatically correct within the context of the output. For example, if the placeholer text is [tktk Product Title] is specifically designed for [tktk Primary Persona Job Role], and the value of [tktk Product Title] is "UX for Engineers" and the value of [tktk Primary Persona Job Role] is "Software Engineer", then the output should be "UX for Engineers is specifically designed for Software Engineers".
+
+    Use the final slide to provide any additional context or notes that you think are important for someone to know so they can better understand the output. If there is anything that you removed from the output because of the delivery format (a slide deck), please include a note in the final slide to explain both what was removed and why you removed it. If you do not have any additional context or notes, that is totally fine - please exclude the final slide entirely if this is the case.
+
+    <hld_structure>
 
     Slide 1: Title Card
 
     [tktk Product Title] for [tktk Client Name]
-    Slide 2: Program Title, Talking Points, and Details
+
+    Slide 2: Product Title, Learning Path, and Details
 
     [tktk Product Title]
 
@@ -83,6 +99,7 @@ hld_content_generation_task:
     [tktk Product description]
 
     Business outcomes:
+
     [tktk Product outcome 1]
     [tktk Product outcome 2]
     [tktk Product outcome 3]
@@ -95,37 +112,57 @@ hld_content_generation_task:
     [tktk Product learning path 2]
     [tktk Product Learning Path Headline 3]
     [tktk Product learning path 3]
-    Slide 3: Stakeholder Insights 
-    [tktk Client Name]
+    [tktk Product Learning Path Headline 4]
+    [tktk Product learning path 4]
+    [tktk Product Learning Path Headline 5]
+    [tktk Product learning path 5]
+
+    Slide 3: Stakeholder Insights
+
+    Purpose built for [tktk Client Name]
 
     What we heard in stakeholder interviews:
+
     [tktk Client-specific detail 1]
     [tktk Client-specific detail 2]
     [tktk Client-specific detail 3]
     [tktk Client-specific detail 4]
     [tktk Client-specific detail 5]
+
     Slide 4: Learner Persona
+
     [tktk Product Title] is specifically designed for [tktk Primary Persona Job Role].
+
     [tktk Learner persona description]
+
     Attributes and Background:
+
     [tktk Attribute and background 1]
     [tktk Attribute and background 2]
     [tktk Attribute and background 3]
 
-    Foundational Skills: 
+    Foundational Skills:
+
     [tktk prereq related to course 1]
     [tktk prereq related to course 2]
     [tktk prereq related to course 3]
+
     Slide 5: Learning Goals
+
     What a [tktk Primary Persona Job Role] will be able to do by the end of the course:
+
     [tktk Product learning goal 1]
     [tktk Product learning goal 2]
     [tktk Product learning goal 3]
     [tktk Product learning goal 4]
     [tktk Product learning goal 5]
+
     Slide 6: Sample of Content
+
     The LED will fill in these details.
+
     Slide 7: Software and Tools
+
     [tktk Software or Tool 1]
     [tktk Software or Tool 2]
     [tktk Software or Tool 3]
@@ -146,6 +183,11 @@ hld_content_generation_task:
     [tktk Software or Tool 18]
     [tktk Software or Tool 19]
     [tktk Software or Tool 20]
+
+    [exclude this slide entirely if you have no additional context or notes to add] Slide 8: LLM Notes
+
+    [tktk LLM Notes and context]
+    </hld_structure>
 
   agent: led_agent
 
